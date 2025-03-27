@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Hero() {
     return (
         <div className="flex justify-center h-screen items-center bg-gradient-to-br from-indigo-100 to-red-100">
-        <div className="flex flex-col items-center justify-center w-1/2 text-center gap-8">
+        <div className="flex flex-col items-center justify-center sm:w-1/2 w-3/4 text-center gap-8">
             <Link className="flex items-center gap-2 justify-center" href="/">
             <img src="/drip.svg" className="w-32"/>
             </Link>

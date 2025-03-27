@@ -42,7 +42,7 @@ export default function SignUp() {
             <Link className="flex items-center gap-2 justify-center" href="/">
             <img src="/drip.svg" className="w-32"/>
             </Link>
-            <form onSubmit={handleSubmit} className="w-132 flex flex-col gap-8 border border-black px-8 pb-12 pt-10 rounded-lg">
+            <form onSubmit={handleSubmit} className="md:w-132 w-120 flex flex-col gap-8 border border-black px-8 pb-12 pt-10 rounded-lg">
             <h1 className="text-2xl text-center">Invite</h1>
             <div className="flex flex-col gap-2 w-full">
             <label htmlFor="name" className="text-xl text-black">Partners Name</label>
