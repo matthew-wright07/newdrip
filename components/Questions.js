@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 
 export default function Questions({ questions, questionnumber, question }) {
@@ -12,8 +14,8 @@ export default function Questions({ questions, questionnumber, question }) {
             <form className="flex flex-col gap-2">
             {
                 questions.map((question, index) => (
-                    <div>
-                    <input onClick={handleClick} className="border border-primary mx-2" type={question.type} key={index} id={question.name} name={questionnumber}/>
+                    <div key={index}>
+                    <input onClick={handleClick} className="border border-primary mx-2" type={question.type} id={question.name} name={questionnumber}/>
                     <label htmlFor={question.name}>{question.name}</label>
                     </div>
                 ))
