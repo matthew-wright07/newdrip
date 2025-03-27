@@ -1,7 +1,7 @@
-import SignUp from "@/components/SignUp";
+import SignUpComponet from "@/components/SignUpComponet";
 
-export default function signup() {
+export default function Signup() {
     return (
-        <SignUp/>
+        <SignUpComponet/>
     )
 }

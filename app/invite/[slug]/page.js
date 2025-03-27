@@ -1,7 +1,7 @@
-import Invite from "@/components/Invite"
+import InviteComponet from "@/components/InviteComponet"
 
 export default function invite(){
     return(
-        <Invite/>
+        <InviteComponet/>
     )
 }

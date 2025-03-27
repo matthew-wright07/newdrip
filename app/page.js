@@ -1,7 +1,7 @@
-import Hero from "@/components/Hero"
+import HeroComponet from "@/components/HeroComponet"
 
-export default function home(){
+export default function Home(){
   return (
-    <Hero/>
+    <HeroComponet/>
   )
 }
