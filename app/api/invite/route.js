@@ -13,14 +13,14 @@ export async function POST(req,res){
             from: 'onboarding@dripsoftly.com',
             to: data.email,
             subject: 'Drip Invite',
-            html: `<p>Hey ${data.name}, ${data.partner} has invited you to <a href="http://localhost:3000/questions/${data.email}">Drip</a>!</p>`,
+            html: `<p>Hey ${data.name}, ${data.partner} has invited you to <a href="https://newdrip.vercel.app/${data.email}">Drip</a>!</p>`,
         });
     }else{
         await resend.emails.send({
             from: 'onboarding@dripsoftly.com',
             to: data.email,
             subject: 'Drip Invite',
-            html: `<p>Hey ${data.name}, here is your link to join <a href="http://localhost:3000/questions/${data.email}">Drip</a>!</p>`,
+            html: `<p>Hey ${data.name}, here is your link to join <a href="https://newdrip.vercel.app/${data.email}">Drip</a>!</p>`,
         });
     }
     const response = await fetch(`${supabaseUrl}/rest/v1/Users`, {
